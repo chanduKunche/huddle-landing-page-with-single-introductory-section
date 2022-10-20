@@ -1,0 +1,125 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(./images/bg-desktop.svg);
+    background-repeat: no-repeat;
+    background-color: hsl(257, 40%, 49%);
+    background-size: cover;
+    background-position: center;
+    font-family: 'Open Sans';
+}
+
+.section-p1 {
+    padding: 20px 45px;
+}
+
+#hero {
+    display: flex;
+    flex-direction: row;
+}
+
+#hero .img-box {
+    width: 50%;
+}
+
+#hero .img-box img {
+    width: 100%;
+}
+
+#hero .register {
+    width: 50%;
+    padding: 20px 50px 10px 50px;
+}
+
+#hero .register h1 {
+    font-size: 42px;
+    font-weight: 600;
+    color: white;
+}
+
+#hero .register p {
+    color: white;
+    line-height: 1.5;
+}
+
+#hero .register button {
+    padding: 16px 55px;
+    color: hsl(257, 40%, 49%);
+    border: none;
+    background: white;
+    border-radius: 40px;
+    font-size: 16px;
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.26);
+    margin-top: 10px;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+#footer {
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 40px;
+}
+
+#footer i {
+    padding: 10px;
+    border: 1px solid white;
+    width: 38px;
+    text-align: center;
+    margin: 5px;
+    border-radius: 50%;
+    color: white;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+#footer i:hover {
+    color: hsl(300, 69%, 71%);
+    border-color: hsl(300, 69%, 71%);
+}
+
+#hero .register button:hover {
+    background: hsl(300, 69%, 71%);
+    color: white;
+}
+
+@media (max-width: 377px) {
+    .section-p1 {
+        padding: 10px 20px;
+    }
+    body {
+        background-image: url(./images/bg-mobile.svg);
+    }
+    #hero {
+        flex-direction: column;
+    }
+    #hero .img-box {
+        width: 100%;
+    }
+    #hero .register {
+        width: 100%;
+        padding: 10px;
+        text-align: center;
+    }
+    #hero .register h1 {
+        font-size: 30px;
+    }
+    #footer {
+        margin-top: 50px;
+        display: flex;
+        justify-content: center;
+        padding-right: 0px;
+    }
+    #hero .register button {
+        padding: 16px 100px;
+    }
+}
